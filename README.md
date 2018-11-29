@@ -1,3 +1,17 @@
+# forked from RobustFieldAutonomyLab/turtlebot_exploration_3d
+
+实现了Turtlebot2在gazebo环境下的自主探索。
+
+### 启动:
+```
+roscore
+roslaunch turtlebot_exploration_3d turtlebot_world.launch
+roslaunch turtlebot_exploration_3d freenect-registered-xyzrgb.launch
+roslaunch turtlebot_exploration_3d gmapping.launch
+roslaunch turtlebot_exploration_3d exploration_rviz.launch
+rosrun turtlebot_exploration_3d turtlebot_exploration_3d
+```
+
 # Turtlebot Autonomous Exploration (3D) 
 
 Sorry I recently updated a wrong version of this. The bad repository was from Oct. 8th and now it's been fixed. Please let me know if you run into any issue with the current version.
