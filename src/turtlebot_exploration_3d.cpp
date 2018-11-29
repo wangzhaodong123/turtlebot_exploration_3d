@@ -79,7 +79,9 @@ int main(int argc, char **argv) {
         catch (tf::TransformException ex) {
             ROS_WARN("Wait for tf: Kinect frame"); 
         } 
-        ros::Duration(0.05).sleep();
+            //changed by wangzhaodong, 18/11/29
+            //ros::Duration(0.05).sleep();
+            ros::Duration(0.5).sleep();
         }
 
         // Take a Scan
@@ -346,7 +348,9 @@ int main(int argc, char **argv) {
                 catch (tf::TransformException ex) {
                     ROS_WARN("Wait for tf: Kinect frame"); 
                 } 
-                ros::Duration(0.05).sleep();
+                    //changed by wangzhaodong, 18/11/29
+                    //ros::Duration(0.05).sleep();
+                    ros::Duration(0.05).sleep();
                 }
                 // Update Octomap
                 ros::spinOnce();
