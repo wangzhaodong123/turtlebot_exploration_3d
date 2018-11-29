@@ -142,3 +142,10 @@ install(TARGETS turtlebot_exploration_3d navigation
 install(DIRECTORY launch/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch/
 )
+install(DIRECTORY gazebo_simulation/launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch/
+)
+
+install(DIRECTORY gazebo_simulation/world/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/world/
+)
